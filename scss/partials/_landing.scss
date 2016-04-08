@@ -1,13 +1,61 @@
 .hero {
-  background-color: #ccc;
-  max-height: 35rem;
+  // background-color: #ccc;
+  max-height: 38rem;
   overflow: hidden;
+  width: 100vw;
 
   img {
-    filter: brightness(30%);
-    transform: translateY(-35%);
+    filter: brightness(25%);
+  //   transform: translateY(-35%);
     width: 100%;
-    z-index: -10;
+  //   z-index: -10;
+  }
+
+  figure {
+    margin: 0;
+    max-height: 38rem;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    // z-index: -10;
+  }
+
+  figcaption {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column wrap;
+  	flex-flow: column wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    height: 100%;
+    left: 0;
+    margin-top: 8rem;
+    position: absolute;
+    top: 0;
+    width: 100%
+  }
+
+  h1 {
+    color: $white;
+  }
+
+  h2 {
+    color: $accent-blue;
+    margin-bottom: 2.5rem;
+  }
+
+  h6 {
+    margin-top: 5rem;
+  }
+
+  a {
+    color: $medium-gray;
+  }
+
+  span {
+    border-bottom: 1px solid $white;
+    padding-bottom: 3px;
   }
 }
 
@@ -22,5 +70,13 @@ nav {
 
   a, ul {
     color: $white;
+  }
+
+  img {
+    width: 130px;
+  }
+
+  .top-bar-right {
+    padding: 25px 0;
   }
 }
