@@ -49,4 +49,11 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+@import 'partials/helpers';
+@import 'partials/base';
+@import 'partials/button';
 @import 'partials/landing';
+@import 'partials/about';
+@import 'partials/how-it-works';
+@import 'partials/contact';
+@import 'partials/footer';

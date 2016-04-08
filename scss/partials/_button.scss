@@ -1,0 +1,15 @@
+button {
+  background: $accent-orange;
+  border-radius: 4rem;
+  color: $white;
+  display: block;
+  height: 4rem;
+  // padding: 2rem 3rem;
+  text-transform: uppercase;
+  transition: background-color .3s ease-in-out;
+  width: 14rem;
+
+  &:hover {
+    background-color: $accent-orange-hover;
+  }
+}
