@@ -12,11 +12,17 @@
   }
 
   span {
-    font-size: 1.75rem;
+    font-size: 1.45rem;
   }
 
   img {
     width: 200px;
+  }
+
+  @media screen and (max-width: 640px) {
+    img {
+      margin: 0 auto;
+    }
   }
 }
 

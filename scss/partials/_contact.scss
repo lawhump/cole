@@ -7,6 +7,21 @@
   }
 }
 
+.email-link {
+  cursor: pointer;
+  transition: color .3s ease-in-out;
+
+  &:hover {
+    color: $accent-orange;
+  }
+}
+
 .clipboard-email {
   margin-top: 5rem;
+}
+
+@media screen and (max-width: 640px) {
+  .submit {
+    margin-top: 2rem;
+  }
 }

@@ -6,9 +6,21 @@
 
   img {
     filter: brightness(25%);
-  //   transform: translateY(-35%);
+    height: 90rem;
+    transform: translateY(-35%);
     width: 100%;
-  //   z-index: -10;
+  }
+
+  @media screen and (max-width: 1200px) {
+    img { height: 90rem; }
+  }
+
+  @media screen and (max-width: 1024px) {
+    img { height: 50rem; }
+  }
+
+  @media screen and (max-width: 640px) {
+    img { height: 30rem; }
   }
 
   figure {
@@ -49,13 +61,37 @@
     margin-top: 5rem;
   }
 
-  a {
-    color: $medium-gray;
+  a:not(.cta) {
+    color: $light-gray;
   }
 
   span {
     border-bottom: 1px solid $white;
     padding-bottom: 3px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    img {
+      transform: translateY(-35%);
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    img {
+      transform: translateY(-10%);
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hero {
+    img {
+      transform: translateY(0);
+    }
   }
 }
 
