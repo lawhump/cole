@@ -4574,7 +4574,7 @@ h4 {
 a {
   border-bottom: 1px solid rgba(255, 255, 255, 0);
   transition: border-bottom .3s ease-in-out; }
-  a:not(.cta):hover {
+  a:not(.cta):not(.more):hover {
     border-bottom: 1px solid white; }
 
 button,
