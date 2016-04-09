@@ -4571,6 +4571,12 @@ h3 {
 h4 {
   font-weight: bold; }
 
+a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  transition: border-bottom .3s ease-in-out; }
+  a:not(.cta):hover {
+    border-bottom: 1px solid white; }
+
 button,
 .cta {
   background: #FC601F;
@@ -4590,6 +4596,8 @@ button,
   height: auto;
   padding: 1.5rem 6rem;
   width: auto; }
+  .cta:hover {
+    color: #fefefe; }
 
 @media screen and (max-width: 640px) {
   .cta {
@@ -4682,6 +4690,8 @@ nav {
   z-index: 10; }
   nav a, nav ul {
     color: #fefefe; }
+  nav a:hover {
+    color: #fefefe; }
   nav img {
     width: 130px; }
   nav .top-bar-right {
@@ -4712,6 +4722,14 @@ nav {
   transition: color .3s ease-in-out; }
   .email-link:hover {
     color: #FC601F; }
+  .email-link:after {
+    content: 'Copy successsful!';
+    display: block;
+    font-size: 70%;
+    opacity: 0;
+    transition: opacity .2s ease-out; }
+  .email-link.copy-success:after {
+    opacity: 1; }
 
 .clipboard-email {
   margin-top: 5rem; }

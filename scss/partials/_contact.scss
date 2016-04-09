@@ -14,6 +14,23 @@
   &:hover {
     color: $accent-orange;
   }
+
+  &:after {
+    content: 'Copy successsful!';
+    display: block;
+    font-size: 70%;
+    opacity: 0;
+    transition: opacity .2s ease-out;
+    // left: 0;
+    // position: relative;
+    // top: 0;
+  }
+
+  &.copy-success {
+    &:after {
+      opacity: 1;
+    }
+  }
 }
 
 .clipboard-email {

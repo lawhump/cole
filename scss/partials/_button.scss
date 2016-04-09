@@ -19,6 +19,10 @@ button,
   height: auto;
   padding: 1.5rem 6rem;
   width: auto;
+
+  &:hover {
+    color: $white;
+  }
 }
 
 @media screen and (max-width: 640px) {
